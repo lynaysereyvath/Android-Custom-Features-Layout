@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_pin_indicator"
+android:id="@+id/background">
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:trackColor="#D5EDFF"
+        android:layout_margin="5dp"
+        app:indicatorSize="35dp"
+        app:indicatorColor="#121C8F"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/ind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pin_indicator_unfilled"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"/>
+        <ImageView
+            android:id="@+id/ind2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pin_indicator_unfilled"/>
+        <ImageView
+            android:id="@+id/ind3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pin_indicator_unfilled"/>
+        <ImageView
+            android:id="@+id/ind4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pin_indicator_unfilled"
+            android:layout_marginEnd="5dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
